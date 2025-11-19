@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            border: 2px solid #000;
+            padding: 25px;
+        }
+        .header-title {
+            text-align: right;
+            font-size: 36px;
+            font-weight: bold;
+            color: #174ea6;
+        }
+        .company-info {
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 20px;
+            border: 1px solid #000;
+        }
+        .info-grid div {
+            padding: 10px 15px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        .info-grid div:nth-child(2n) {
+            border-right: none;
+        }
+        .small-title {
+            font-size: 14px;
+            color: #555;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+        table th {
+            background: #0c3d91;
+            color: white;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #000;
+            vertical-align: top;
+        }
+        .summary-box {
+            width: 280px;
+            float: right;
+            border: 1px solid #000;
+            background: #d8e7ff;
+            margin-top: 20px;
+        }
+        .summary-box div {
+            padding: 12px 15px;
+            border-bottom: 1px solid #000;
+        }
+        .summary-box div:last-child {
+            border-bottom: none;
+        }
+        .summary-title {
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .footer .tc {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="company-info">
+            <h2>Zyer Electronics Hub</h2>
+            14B, Northern Street<br />
+            
+            Mumbai 10001<br />
+            India
+        </div>
+
+        <div class="header-title">INVOICE</div>
+
+        <div class="info-grid">
+            <div>
+                <span class="small-title">Invoice#</span><br />
+                <span class="bold">INV-000001</span>
+            </div>
+            <div>
+                <span class="small-title">Invoice Date</span><br />
+                <span class="bold">18 Nov 2025</span>
+            </div>
+            <div>
+                <span class="small-title">Terms</span><br />
+                <span class="bold">Due on Receipt</span>
+            </div>
+            <div>
+                <span class="small-title">Due Date</span><br />
+                <span class="bold">18 Nov 2025</span>
+            </div>
+        </div>
+
+        <div class="info-grid" style="margin-top:0; border-top:none;">
+            <div>
+                <span class="bold">Bill To</span><br /><br />
+                <strong>Mr. Harish</strong><br />
+                2,Lake Road<br />
+                Navalur <br />
+                Chennai
+            </div>
+
+            <div>
+                <span class="bold">Ship To</span><br /><br />
+                2,Lake Road<br />
+                Navalur<br />
+                Chennai            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th style="width:5%">#</th>
+                <th>Item & Description</th>
+                <th style="width:10%">Qty</th>
+                <th style="width:15%">Rate</th>
+                <th style="width:15%">Amount</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><strong>Camera</strong><br />DSLR camera with advanced shooting capabilities</td>
+                <td>1.00</td>
+                <td>&#8377;10,899.00</td>
+                <td>&#8377;10,899.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>Fitness Tracker</strong><br />Activity tracker with heart rate monitoring</td>
+                <td>1.00</td>
+                <td>&#8377;4,129.00</td>
+                <td>&#8377;4,129.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><strong>Laptop</strong><br />Lightweight laptop with a powerful processor</td>
+                <td>1.00</td>
+                <td>&#8377;1,11,199.00</td>
+                <td>&#8377;1,11,199.00</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:right; font-weight:bold;">Sub Total</td>
+                <td>&#8377;1,26,227.00</td>
+            </tr>
+        </table>
+
+        <div class="summary-box">
+            <div><span class="summary-title">Tax Rate</span> <span style="float:right;">5.00%</span></div>
+            <div><span class="summary-title">Total</span> <span style="float:right;">&#8377;1,32,338.35</span></div>
+            <div><span class="summary-title">Balance Due</span> <span style="float:right;">&#8377;1,32,338.35</span></div>
+        </div>
+
+        <div class="footer">
+            Thanks for shopping with us.<br /><br />
+            <div class="tc">
+                <strong>Terms & Conditions</strong><br />
+                Full payment is due upon receipt of this invoice.<br />
+                Late payments may incur additional charges or interest as per the applicable laws.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
